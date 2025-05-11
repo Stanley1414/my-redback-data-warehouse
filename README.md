@@ -1,16 +1,17 @@
-# Data Validation and Anomaly Detection App
+# AI Data Validator - Streamlit App
 
-A Streamlit application for validating data and detecting anomalies using AI-powered algorithms.
+This tool uses machine learning and defined validation rules to detect and correct errors in uploaded datasets in real time. 
 
 ## Features
 
-- Multiple file format support (CSV, Excel, JSON, Parquet)
-- AI-powered anomaly detection using Isolation Forest
-- Automatic data correction
-- Missing value handling
-- Pattern detection
-- Consistency checking
-- Detailed validation reporting
+- Converts incoming files to CSV
+- Applies data type, range, format, and completeness checks.
+- Uses the uploaded dataset to automatically train the model
+- Automatically detects anomalies, correct values and saves the cleaned dataset.
+- Streamlit interface for easy upload and feedback
+
+## Purpose:
+To ensure high quality, validated data is uploaded into the Data Warehouse. 
 
 ## Installation
 
