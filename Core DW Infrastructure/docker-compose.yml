@@ -53,6 +53,8 @@ services:
     environment:
       - FLASK_ENV=development
     container_name: flask-api
+    env_file:
+      - ./.env
     restart: always
     networks:
       - dw_network
@@ -62,9 +64,9 @@ services:
       context: ./dremio-api
       dockerfile: Dockerfile
     ports:
-      - "5001:5000" 
+      - "5001:5000"
     env_file:
-      - ./dremio-api/dw.env
+      - ./dw.env
     container_name: structured-solution-api
     networks:
       - dw_network
